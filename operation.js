@@ -63,3 +63,15 @@ function adderValue(key){
    updateDisplay();
    
 }
+function SignChange(){
+    var value = parseInt(currentvalue);
+    if(value > 0){
+        value = value* -1;
+        currentvalue = value.toString();
+    }
+    else if(value < 0){
+        value = parseInt(Math.abs(value));
+        currentvalue = value.toString();
+    }
+    updateDisplay();
+}
