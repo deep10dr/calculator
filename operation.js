@@ -46,13 +46,7 @@ function Operator(key){
     }
 }
  function resultvalue(){
-    if(count%2==0){
         currentvalue = eval(currentvalue);
-    }
-    else{
-        alert("Please close the bracket");
-    }
-      
         currentvalue = currentvalue.toString();
         updateDisplay();
 }
